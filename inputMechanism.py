@@ -71,25 +71,6 @@ for i,chartType in enumerate(snpcandle):
 	# print(listofWindows[chartType])
 print(tf.shape(listofWindows['1day']))
 			# we don't pass listofWindows[chartType] to my_func
-# create input queues
-
-# # create input queues
-# train_input_queue = tf.train.slice_input_producer(
-# 									[listofWindows['1day']],
-# 									shuffle=False)
-
-# # content = tf.read_content(train_input_queue[0])
-# # train_candle.reshape(tensor, [-1, n_inputs])
-# # test_candle.reshape(tensor, [-1, n_inputs])
-
-# train_candle_batch = tf.train.batch(
-# 									[train_input_queue],
-# 									batch_size=batch_size
-# 									)
-
-# hey I'm back hi. 
-# # x = tf.placeholder(tf.float32, [None, n_steps, n_inputs])
-# # y = tf.placeholder(tf.float32, [None, n_classes])
 
 with tf.Session() as sess:
 
